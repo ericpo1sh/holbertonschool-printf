@@ -8,7 +8,7 @@
  * Return: the type to another file.
  *
  */
-int (*identify(char *x))(va_list)
+int (*_identify(char *x))(va_list)
 {
 	pfmt id[] = {
 		{"s", printstring},
