@@ -1,4 +1,3 @@
-# holbertonschool-printf
 <p align="center">
 <p align="center">
 <img src="https://uploads-ssl.webflow.com/6105315644a26f77912a1ada/63eea844ae4e3022154e2878_Holberton.png" width="375"/>
