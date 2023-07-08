@@ -73,6 +73,6 @@ print_dec(va_list varg)
 	int numb = va_arg(varg, int);
 
 	for (i = 0; numb[i] != NULL; i++, count++)
-		_putchar(numb + 0);
+		_putchar(numb + 48);
 	return (count);
 }
