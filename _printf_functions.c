@@ -68,11 +68,9 @@ int print_int(va_list varg)
  */
 print_dec(va_list varg)
 {
-	int count = 0;
-	int i;
-	int numb = va_arg(varg, int);
+	int numb = 0;
 
-	for (i = 0; numb[i] != NULL; i++, count++)
-		_putchar(numb + 48);
-	return (count);
+	if (numb != NULL)
+		numb = va_arg(varg, int);
+	return (numb);
 }
