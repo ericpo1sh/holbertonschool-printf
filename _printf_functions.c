@@ -70,7 +70,7 @@ print_dec(va_list varg)
 {
 	int numb = 0;
 
-	if (numb != NULL)
+	if (!numb)
 		numb = va_arg(varg, int);
 	return (numb);
 }
