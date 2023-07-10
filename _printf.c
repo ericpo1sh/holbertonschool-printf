@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include "main.h"
-#include "_putchar.c"
 #include <stdlib.h>
 /**
  * _printf - implementation of the OG printf() func.
@@ -14,6 +13,9 @@ int _printf(const char *fmt, ...)
 	va_list args;
 	char x;
 	va_start(args, fmt);
+
+	if (fmt == NULL || (fmt[0] == '%' && fmt[1] == '\0'))
+		return (-1);
 
 	if (!fmt) /* Checking if Format is NULL */
 	{
