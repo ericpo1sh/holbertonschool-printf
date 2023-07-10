@@ -12,14 +12,15 @@ int _printf(const char *format, ...)
 	int i = 0; /* index for fmt */
 	va_list args;
 	char x;
+	int z = 0;
 	va_start (args, format);
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
-	if (!format) /* Checking if Format is NULL */
+	if (format) /* Checking if Format is NULL */
 	{
-		while (!format[i]) /* checking if current char isnt NULL */
+		while (format[i]) /* checking if current char isnt NULL */
 		{
 			if (format[i] == '%') /* checking if current character is identifier*/
 			{
@@ -29,20 +30,25 @@ int _printf(const char *format, ...)
 				i++;
 				_putchar(format[i]);
 				}
-				if (_identify(x, args) == 0)
-				{
+
 					x = format[i + 1];
+				if (_identify(x, args) == z)
+				{
 					counter++;
 					_putchar(format[i + 1]);
 					i++;
 				}
+					z++;
 					i++;
 			}
 			else
 			{
-				counter++;
-				_putchar(format[i]);
-				i++;
+				if (format)
+				{
+					counter++;
+					_putchar(format[i]);
+					i++;
+				}
 			}
 		}
 	}
