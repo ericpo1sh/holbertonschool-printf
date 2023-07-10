@@ -8,19 +8,24 @@
  * Return: the type to another file.
  *
  */
-int (*_identify(char *x))(va_list)
+int _identify(char x, va_list args)
 {
 	pfmt id[] = {
-		{"s", printstring},
-		{"c", printchar},
-		{"i", printint},
-		{"d", printdec},
+		{"s", print_string},
+		{"c", print_char},
+		{"i", print_int},
+		{"d", print_dec},
 		{NULL, NULL}
 	};
 	int i = 0;
+	int counter = 0;
 
-	if (x != NULL)
-		while (id[i].type != NULL && *(id[i].type) != *x)
-			i++;
-	return (id[i].f);
+	if (!x)
+		while (*id[i].type == x)
+		{
+			id[i].f(args);
+			counter++;
+		}
+	i++;
+	return (counter);
 }

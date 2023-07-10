@@ -1,6 +1,6 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
-#include <stdargs.h>
+#include <stdarg.h>
 /**
 * struct identify - Struct to find the corresponding type.
 * @type: type.
@@ -13,11 +13,13 @@ typedef struct identify
 
 } pfmt;
 
-int (*_identify(char *x))(va_list);
+
 int _putchar(char c);
 int _printf(const char *fmt, ...);
-print_string(char *);
-print_char(char);
-print_int(long int);
-print_dec(int);
+int _identify(char x, va_list args);
+int print_string(va_list);
+int print_char(va_list);
+int print_int(va_list);
+int print_dec(va_list);
+
 #endif

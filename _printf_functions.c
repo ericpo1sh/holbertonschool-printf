@@ -6,7 +6,7 @@
  * @varg : the arguement that we use in function
  * Return: count of the ammount of characters printed.
  */
-print_string(va_list varg)
+int print_string(va_list varg)
 {
 	char *string = va_arg(varg, char *);
 	int i = 0;
@@ -25,7 +25,7 @@ print_string(va_list varg)
  * @varg : the arguement that we use in function
  * Return: Always 1, its just one character.
  */
-print_char(va_list varg)
+int print_char(va_list varg)
 {
 	char c = va_arg(varg, int);
 
@@ -48,7 +48,7 @@ int print_int(va_list varg)
 		x *= 10;
 	for (; x >= 1; x /= 10)
 	{
-		temp = (num / x);
+		temp = (numb / x);
 		_putchar(temp + 48);
 		temp *= x;
 		if (temp != 0)
@@ -66,7 +66,7 @@ int print_int(va_list varg)
  * @varg : the arguement that we use in function
  * Return: Always the return count
  */
-print_dec(va_list varg)
+int print_dec(va_list varg)
 {
 	int numb = 0;
 
