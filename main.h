@@ -6,10 +6,6 @@
 * @type: type.
 * @f: The function that points to the type to cast it.
 */
-int _printf(const char *fmt, ...);
-int _putchar(char c);
-int (*_identify(char *x))(va_list);
-
 typedef struct identify
 {
 	char *type;
@@ -17,6 +13,9 @@ typedef struct identify
 
 } pfmt;
 
+int (*_identify(char *x))(va_list);
+int _putchar(char c);
+int _printf(const char *fmt, ...);
 print_string(char *);
 print_char(char);
 print_int(long int);
