@@ -1,6 +1,7 @@
 #include "main.h"
 #include "_putchar.c"
 #include <stdlib.h>
+#include <stdarg.h>
 /**
  * print_string - will print out the string if format correct.
  * @varg : the arguement that we use in function

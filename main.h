@@ -14,7 +14,6 @@ typedef struct identify
 } pfmt;
 
 
-int _putchar(char c);
 int _printf(const char *fmt, ...);
 int _identify(char x, va_list args);
 int print_string(va_list);
