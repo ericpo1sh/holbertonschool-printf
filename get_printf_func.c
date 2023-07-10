@@ -15,7 +15,7 @@ int (*_identify(char *x))(va_list)
 		{"c", printchar},
 		{"i", printint},
 		{"d", printdec},
-		{NULL, '/0'}
+		{NULL, 'NULL'}
 	};
 	int i = 0;
 
