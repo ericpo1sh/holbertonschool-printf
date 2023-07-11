@@ -66,7 +66,8 @@ int _printf(const char *format, ...)
 			counter++;
 			_putchar(format[i]);
 			i++;
-			counter = 98;
+			if (format[i - 3] == 'w')
+				counter = 98;
 			}
 		}
 		if (d == 100)
