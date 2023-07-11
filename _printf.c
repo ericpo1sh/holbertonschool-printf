@@ -66,8 +66,6 @@ int _printf(const char *format, ...)
 			counter++;
 			_putchar(format[i]);
 			i++;
-			/*if (format[15] == 'a')*/
-				/*couner = counter - 16;*/
 			}
 		}
 		if (d == 100)

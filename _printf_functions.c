@@ -14,11 +14,11 @@ int print_string(va_list varg)
 
 	if (!(string))
 	{
-		string = "(null)";
+		return (-1);
 	}
 	if (*string == '\0')
 	{
-		return (0);
+		return (-4);
 	}
 	if (string)
 	{
