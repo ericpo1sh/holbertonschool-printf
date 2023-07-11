@@ -39,11 +39,11 @@ int _printf(const char *format, ...)
 					_putchar(format[i - 1]);
 					_putchar(format[i]);
 					counter += 2;
-					i += 2;
 				}
 				else
 				counter++;
 				i++;
+				i += 2;
 			}
 			else 
 				i++;
