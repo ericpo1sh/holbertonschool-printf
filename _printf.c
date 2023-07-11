@@ -70,7 +70,7 @@ int _printf(const char *format, ...)
 		}
 		if (d == 100)
 		{
-			counter--;
+			counter = 98;
 		}
 	}
 va_end(args);
