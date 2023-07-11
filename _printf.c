@@ -41,11 +41,14 @@ int _printf(const char *format, ...)
 					counter += 2;
 				}
 				else
-				counter++;
+				{
+					counter++;
+					i++;
+				}
 				i++;
 			}
 			else 
-				i += 2;
+				i++;
 		}
 		else
 		{
