@@ -37,6 +37,7 @@ int _printf(const char *format, ...)
 				_putchar(format[i - 1]);
 				_putchar(format[i]);
 				i++;
+				counter += 2;
 			}
 			else 
 				i++;
