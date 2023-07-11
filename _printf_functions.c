@@ -14,7 +14,13 @@ int print_string(va_list varg)
 
 	if (!(string))
 	{
-		return (-1);
+		_putchar('(');
+		_putchar('n');
+		_putchar('u');
+		_putchar('l');
+		_putchar('l');
+		_putchar(')');
+		return (6);
 	}
 	if (*string == '\0')
 	{
