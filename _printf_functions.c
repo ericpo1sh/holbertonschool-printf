@@ -26,16 +26,6 @@ int print_string(va_list varg)
 			count++;
 		}
 	}
-	else 
-	{
-		_putchar('(');
-		_putchar('N');
-		_putchar('U');
-		_putchar('L');
-		_putchar('L');
-		_putchar(')');
-		count += 6;
-	}
 	return (count);
 }
 /**
