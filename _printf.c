@@ -28,7 +28,6 @@ int _printf(const char *format, ...)
 				{
 					_putchar(format[i]);
 					counter++;
-					i++;
 				}
 				if (format[i] == 's' || format[i] == 'c' || format[i] == 'i' ||
 						format[i] == 'd')
@@ -40,8 +39,8 @@ int _printf(const char *format, ...)
 						_putchar(format[i + 1]);
 						i++;
 					}
-				}
 				i++;
+				}
 			}
 			else
 			{
