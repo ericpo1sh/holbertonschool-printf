@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 					{
 						if (format[i] == 's')
 						{
-							counter -= 2;
+							d = 100;;
 						}
 						else
 						{
@@ -53,6 +53,10 @@ int _printf(const char *format, ...)
 				else
 				{
 					counter++;
+				}
+				if (d == 100)
+				{
+					counter--;
 				}
 				i++;
 			}
