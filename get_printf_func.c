@@ -3,9 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * identify - will find the correct fomat for our type.
+ * _identify - will find the correct fomat for our type.
  * @x : looks for the identifiers s, c, i ,d
- * Return: the type to another file.
+ * @args : arguements
+ * Return : the counter
  *
  */
 int _identify(char x, va_list args)
