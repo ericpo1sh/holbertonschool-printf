@@ -38,9 +38,16 @@ int _printf(const char *format, ...)
 				{
 					if (format[i - 1] == '%')
 					{
-						_putchar(format[i - 1]);
-						_putchar(format[i]);
-						counter += 2;
+						if (format[i] == 's')
+						{
+							i += 2;
+						}
+						else
+						{
+							_putchar(format[i - 1]);
+							_putchar(format[i]);
+							counter += 2;
+						}
 					}
 					else
 						i += 2;
