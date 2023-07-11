@@ -8,7 +8,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int counter = 1; /* counter for number of characters */
+	int counter = 0; /* counter for number of characters */
 	int i = 0; /* index for fmt */
 	va_list args;
 	char x;
@@ -26,9 +26,9 @@ int _printf(const char *format, ...)
 				i++;
 				if (format[i] == '%') /*if i + 1, we print LITERAL% sign*/
 				{
+					_putchar(format[i]);
 					counter++;
 					i++;
-					_putchar(format[i]);
 				}
 				if (format[i] == 's' || format[i] == 'c' || format[i] == 'i' ||
 						format[i] == 'd')

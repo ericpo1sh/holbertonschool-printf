@@ -39,8 +39,9 @@ int print_char(va_list varg)
  */
 int print_num(va_list varg)
 {
-	int len, powten, i, digit , x, count = 0;
+	int len, powten, i, digit , x = 0;
 	int numb;
+	int count = 0;
 
 	x = va_arg(varg, int);
 	if (x != 0)
