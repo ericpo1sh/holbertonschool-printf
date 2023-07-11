@@ -8,7 +8,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int counter = 0; /* counter for number of characters */
+	int counter = 1; /* counter for number of characters */
 	int i = 0; /* index for fmt */
 	va_list args;
 	char x;
