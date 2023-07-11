@@ -36,14 +36,18 @@ int _printf(const char *format, ...)
 			{
 				if (x != '\0')
 				{
-					_putchar(format[i - 1]);
-					_putchar(format[i]);
-					counter += 2;
+					if (format[i - 1] == '%')
+					{
+						_putchar(format[i - 1]);
+						_putchar(format[i]);
+						counter += 2;
+					}
+					else
+						i += 2;
 				}
 				else
 				{
 					counter++;
-					i++;
 				}
 				i++;
 			}
