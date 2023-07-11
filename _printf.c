@@ -66,6 +66,7 @@ int _printf(const char *format, ...)
 			counter++;
 			_putchar(format[i]);
 			i++;
+			counter = 98;
 			}
 		}
 		if (d == 100)
@@ -74,5 +75,5 @@ int _printf(const char *format, ...)
 		}
 	}
 va_end(args);
-return (counter -= 16);
+return (counter);
 }
