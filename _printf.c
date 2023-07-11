@@ -40,7 +40,7 @@ int _printf(const char *format, ...)
 					{
 						if (format[i] == 's')
 						{
-							i++;
+							counter--;
 						}
 						else
 						{
