@@ -15,7 +15,6 @@ int _identify(char x, va_list args)
 		{"c", print_char},
 		{"i", print_num},
 		{"d", print_num},
-		{"%", print_string},
 		{NULL, NULL}
 	};
 	int i = 0;

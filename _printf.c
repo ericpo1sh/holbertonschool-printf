@@ -24,6 +24,14 @@ int _printf(const char *format, ...)
 			if (format[i] == '%') /* checking if current character is identifier*/
 			{
 				i++;
+				if (format[i] != 's' && format[i] != 'c' &&
+						format[i] != 'i' && format[i] != 'd' &&
+						format[i] != '%')
+				{
+					_putchar(format[i - 1]);
+					_putchar(format[i]);
+					i++;
+				}
 				if (format[i] == '%') /*if i + 1, we print LITERAL% sign*/
 				{
 					_putchar(format[i]);
@@ -31,7 +39,7 @@ int _printf(const char *format, ...)
 					i++;
 				}
 				if (format[i] == 's' || format[i] == 'c' || format[i] == 'i' ||
-						format[i] == 'd' || format[i] == '%')
+						format[i] == 'd')
 				{
 					x = format[i];
 					if (_identify(x, args))
