@@ -8,10 +8,10 @@
 */
 typedef struct identify
 {
-	char *type;
-	int (*f)(va_list);
+	char *type; /* holds our format specifier */
+	int (*f)(va_list); /* f is function pointer, points to functions that accept the arg */
 
-} pfmt;
+} pfmt; /* short for print format */
 
 
 int _printf(const char *format, ...);
