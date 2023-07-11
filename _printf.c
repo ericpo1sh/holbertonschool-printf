@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			x = format[i];
-			d = counter;
+			flag = counter;
 			counter += _identify(x, args); /* starting our function checker */
 			if (format[i] == '%') /* if there are two %'s, we print LITERAL % sign */
 			{
@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 				counter++;
 				i++; /* move to the next spot over */
 			}
-			else if (counter <= d) /* this is our flag */
+			else if (counter <= flag) /* this is our flag */
 			{
 				if (x != '\0') /* if our current character isnt \0 then we.. */
 				{
