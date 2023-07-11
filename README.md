@@ -8,7 +8,7 @@
 
 [![FLOWCHART](https://github.com/ericpo1sh/holbertonschool-printf/assets/126730794/faff87ea-4a84-4eb5-8b9b-961d1a3c70f8)](https://github.com/ericpo1sh/holbertonschool-printf/assets/126730794/faff87ea-4a84-4eb5-8b9b-961d1a3c70f8)
 
-<center><h2 style="font-family: 'Trebuchet MS', sans-serif;">FLOWCHART!</h2></center>
+<center><h2 align="center" style="font-family: 'Trebuchet MS', sans-serif;">FLOWCHART!</h2></center>
 
 
 <h4 align="center" style="font-family:Trebuchet MS">
