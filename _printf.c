@@ -24,37 +24,23 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			x = format[i];
-			if (!(x))
+			d = counter;
+			counter += _identify(x, args);
+			if (format[i] == '%') /*if i + 1, we print LITERAL% sign*/
 			{
-				_putchar('(');
-				_putchar('N');
-				_putchar('U');
-				_putchar('L');
-				_putchar('L');
-				_putchar(')');
-				counter += 6;
+				_putchar(format[i]);
+				counter++;
 				i++;
 			}
-			else 
+			else if (counter <= d)
 			{
-				d = counter;
-				counter += _identify(x, args);
-				if (format[i] == '%') /*if i + 1, we print LITERAL% sign*/
-				{
-					_putchar(format[i]);
-					counter++;
-					i++;
-				}
-				else if (counter <= d)
-				{
-					_putchar(format[i - 1]);
-					_putchar(format[i]);
-					i++;
-					counter += 2;
-				}
-				else 
-					i++;
+				_putchar(format[i - 1]);
+				_putchar(format[i]);
+				i++;
+				counter += 2;
 			}
+			else 
+				i++;
 		}
 		else
 		{

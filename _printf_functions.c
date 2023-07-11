@@ -12,6 +12,10 @@ int print_string(va_list varg)
 	int i = 0;
 	int count = 0;
 
+	if (!(string))
+	{
+		string = "(null)";
+	}
 	if (*string == '\0')
 	{
 		_putchar(string[i]);
