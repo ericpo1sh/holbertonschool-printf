@@ -18,7 +18,6 @@ int print_string(va_list varg)
 	}
 	if (*string == '\0')
 	{
-		_putchar(string[i]);
 		return (0);
 	}
 	if (string)

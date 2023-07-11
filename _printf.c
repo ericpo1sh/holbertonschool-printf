@@ -34,10 +34,15 @@ int _printf(const char *format, ...)
 			}
 			else if (counter <= d)
 			{
-				_putchar(format[i - 1]);
-				_putchar(format[i]);
+				if (x != '\0')
+				{
+					_putchar(format[i - 1]);
+					_putchar(format[i]);
+					counter += 2;
+				}
+				else
+				counter++;
 				i++;
-				counter += 2;
 			}
 			else 
 				i++;
