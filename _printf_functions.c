@@ -12,11 +12,14 @@ int print_string(va_list varg)
 	int i = 0;
 	int count = 0;
 
-	if (varg != NULL)
+	if (varg)
 	{
-		_putchar(string[i]);
-		i++;
-		count++;
+		while (string[i])
+		{
+			_putchar(string[i]);
+			i++;
+			count++;
+		}
 	}
 	return (count);
 }
