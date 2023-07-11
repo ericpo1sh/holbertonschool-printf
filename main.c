@@ -16,8 +16,8 @@ int main(void)
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
 
-	printf("%d\n", len);
 	_printf("%d\n", len);
+	printf("%d\n", len2);
 	_printf("%i, %d\n", -12313, -12313);
 
     ui = (unsigned int)INT_MAX + 1024;
