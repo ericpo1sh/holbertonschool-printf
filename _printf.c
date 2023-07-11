@@ -54,14 +54,14 @@ int _printf(const char *format, ...)
 				{
 					counter++;
 				}
-				if (d == 100)
-				{
-					counter -= 2;
-				}
 				i++;
 			}
 			else 
 				i++;
+			if (d == 100)
+			{
+				counter--;
+			}
 		}
 		else
 		{
