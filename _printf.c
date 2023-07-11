@@ -41,7 +41,7 @@ int _printf(const char *format, ...)
 						if (format[i] == 's')
 						{
 							d = 100;
-							count -= 16;
+							counter -= 16;
 						}
 						else
 						{
