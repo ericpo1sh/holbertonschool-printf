@@ -12,7 +12,12 @@ int print_string(va_list varg)
 	int i = 0;
 	int count = 0;
 
-	if (varg)
+	if (*string == '\0')
+	{
+		_putchar(string[i]);
+		return (0);
+	}
+	if (string)
 	{
 		while (string[i])
 		{
@@ -20,6 +25,16 @@ int print_string(va_list varg)
 			i++;
 			count++;
 		}
+	}
+	else 
+	{
+		_putchar('(');
+		_putchar('N');
+		_putchar('U');
+		_putchar('L');
+		_putchar('L');
+		_putchar(')');
+		count += 6;
 	}
 	return (count);
 }
