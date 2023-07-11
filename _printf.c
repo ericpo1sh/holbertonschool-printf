@@ -41,7 +41,6 @@ int _printf(const char *format, ...)
 						if (format[i] == 's')
 						{
 							d = 100;
-							counter -= 16;
 						}
 						else
 						{
@@ -75,5 +74,5 @@ int _printf(const char *format, ...)
 		}
 	}
 va_end(args);
-return (counter);
+return (counter -= 16);
 }
