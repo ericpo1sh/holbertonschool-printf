@@ -6,7 +6,7 @@
 
 <h4 align="center" style="font-family:Trebuchet MS">The '_printf()' function formats and prints a series of characters and values to the standard output stream stdout . Format specifications, beginning with a percent sign (%), to determine the output format for any argument-list following the format-string. The formats are %d, %i, %s, %c.</b></h4>
 
-<a href="(https://github.com/ericpo1sh/holbertonschool-printf/assets/126730794/faff87ea-4a84-4eb5-8b9b-961d1a3c70f8)" style="float: center; font-size:34; font-family:Trebuchet MS">
+<a href="https://github.com/ericpo1sh/holbertonschool-printf/assets/126730794/faff87ea-4a84-4eb5-8b9b-961d1a3c70f8" style="float: center; font-size:34; font-family:Trebuchet MS">
 FLOWCHART!!!!
 </a>
 
