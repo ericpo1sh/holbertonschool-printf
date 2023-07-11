@@ -1,1 +1,8 @@
-Start of my man page
+.TH man 3 "July 11, 2023" "Eric Dzyk"
+
+.SH NAME
+
+_printf - Eric Dzyk's implementation of the printf function!!
+
+.SH SYNOPSIS
+
