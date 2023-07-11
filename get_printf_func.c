@@ -13,19 +13,18 @@ int _identify(char x, va_list args)
 	pfmt id[] = {
 		{"s", print_string},
 		{"c", print_char},
-		{"i", print_int},
-		{"d", print_dec},
+		{"i", print_num},
+		{"d", print_num},
 		{NULL, NULL}
 	};
 	int i = 0;
 	int counter = 0;
 
-	if (!x)
-		while (*id[i].type == x)
-		{
-			id[i].f(args);
-			counter++;
-		}
-	i++;
+	while (id[i].type)
+	{
+		if (*(id[i].type) == x)
+			counter = id[i].f(args);
+		i++;
+	}
 	return (counter);
 }

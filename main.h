@@ -16,9 +16,9 @@ typedef struct identify
 
 int _printf(const char *format, ...);
 int _identify(char x, va_list args);
+int _charchecker(char _type);
 int print_string(va_list);
 int print_char(va_list);
-int print_int(va_list);
-int print_dec(va_list);
+int print_num(va_list);
 int _putchar(char c);
 #endif

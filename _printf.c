@@ -12,7 +12,6 @@ int _printf(const char *format, ...)
 	int i = 0; /* index for fmt */
 	va_list args;
 	char x;
-	int z = 0;
 	va_start (args, format);
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
@@ -20,34 +19,37 @@ int _printf(const char *format, ...)
 
 	if (format) /* Checking if Format is NULL */
 	{
-		while (format[i]) /* checking if current char isnt NULL */
+		while (format && format[i]) /* checking if current char isnt NULL */
 		{
 			if (format[i] == '%') /* checking if current character is identifier*/
 			{
-				if (format[i + 1] == '%') /*if i + 1, we print LITERAL% sign*/
-				{
-				counter++;
 				i++;
-				_putchar(format[i]);
-				}
-
-					x = format[i + 1];
-				if (_identify(x, args) == z)
+				if (format[i] == '%') /*if i + 1, we print LITERAL% sign*/
 				{
 					counter++;
-					_putchar(format[i + 1]);
 					i++;
+					_putchar(format[i]);
 				}
-					z++;
-					i++;
+				if (format[i] == 's' || format[i] == 'c' || format[i] == 'i' ||
+						format[i] == 'd')
+				{
+					x = format[i];
+					if (_identify(x, args))
+					{
+						counter++;
+						_putchar(format[i + 1]);
+						i++;
+					}
+				}
+				i++;
 			}
 			else
 			{
 				if (format)
 				{
-					counter++;
-					_putchar(format[i]);
-					i++;
+				counter++;
+				_putchar(format[i]);
+				i++;
 				}
 			}
 		}
