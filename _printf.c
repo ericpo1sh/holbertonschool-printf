@@ -26,10 +26,6 @@ int _printf(const char *format, ...)
 			i++;
 			x = format[i];
 			flag = counter;
-			/**
-			 * _identify - checks if identifier is found and compares it
-			 * @args: arguements
-			 */
 			counter += _identify(x, args); /* starting our function checker */
 			if (format[i] == '%') /* if there are two %'s, we print LITERAL % sign */
 			{
