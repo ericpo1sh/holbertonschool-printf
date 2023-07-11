@@ -6,8 +6,7 @@
  * _identify - will find the correct fomat for our type.
  * @x : looks for the identifiers s, c, i ,d
  * @args : arguements
- * Return : the counter
- *
+ * Return: the counter
  */
 int _identify(char x, va_list args)
 {
