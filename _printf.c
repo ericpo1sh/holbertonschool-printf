@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 					i++;
 				}
 				if (format[i] == 's' || format[i] == 'c' || format[i] == 'i' ||
-						format[i] == 'd')
+						format[i] == 'd' || format[i] == '%')
 				{
 					x = format[i];
 					if (_identify(x, args))
