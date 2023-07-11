@@ -58,10 +58,6 @@ int _printf(const char *format, ...)
 			}
 			else 
 				i++;
-			if (d == 100)
-			{
-				counter--;
-			}
 		}
 		else
 		{
@@ -71,6 +67,10 @@ int _printf(const char *format, ...)
 			_putchar(format[i]);
 			i++;
 			}
+		}
+		if (d == 100)
+		{
+			counter--;
 		}
 	}
 va_end(args);
